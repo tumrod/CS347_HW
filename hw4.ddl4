@@ -1,0 +1,48 @@
+drop view project_emp;
+drop view manager;
+
+create view project_emp as
+SELECT person_id, type, name, ssnum, gender, birth_date, address, city, state, zip, emp_id,
+		hire_date, salary, status, title, rating
+FROM SIM_person
+WHERE TYPE = 'project_emp';
+
+create or replace TRIGGER project_emp_trigger
+     INSTEAD OF insert ON project_emp
+     FOR EACH ROW
+BEGIN
+     insert into SIM_person(
+        person_id, type, name, ssnum, gender, birth_date, address, city, state, 
+		zip, emp_id,
+		hire_date, salary, status, title, rating)
+     VALUES (
+        :new.PERSON_ID,
+        'project_emp',
+        :new.name, :new.ssnum, :new.gender, :new.birth_date, :new.address, :new.city, 
+		:new.state, :new.zip, :new.emp_id,
+		:new.hire_date, :new.salary, :new.status, :new.title, :new.rating);
+END;
+/
+
+create view manager as
+SELECT person_id, type, name, ssnum, gender, birth_date, address, city, state, zip, emp_id,
+		hire_date, salary, status, title, bonus
+FROM SIM_person
+WHERE TYPE = 'manager';
+
+create or replace TRIGGER manager_trigger
+     INSTEAD OF insert ON manager
+     FOR EACH ROW
+BEGIN
+     insert into SIM_person(
+        person_id, type, name, ssnum, gender, birth_date, address, city, state, 
+		zip, emp_id,
+		hire_date, salary, status, title, bonus)
+     VALUES (
+        :new.PERSON_ID,
+        'manager',
+        :new.name, :new.ssnum, :new.gender, :new.birth_date, :new.address, :new.city, 
+		:new.state, :new.zip, :new.emp_id,
+		:new.hire_date, :new.salary, :new.status, :new.title, :new.bonus);
+END;
+/

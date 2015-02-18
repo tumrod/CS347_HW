@@ -1,0 +1,273 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4C38B11F-4889-3594-897D-DBE11C9439BC" name="SIM_Person">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:40:15 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="person_id" id="B3CB5D7C-A6C7-1324-E0B0-128868F66338">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:40:58 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="type" id="C76BBA40-C394-1F6E-066B-A1680E0F76E7">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 01:51:40 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="name" id="E37CEE06-E5FC-4A81-3870-AA5A69D7821A">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:41:26 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="ssnum" id="03798CDB-2218-0F84-F1D9-41525BFA38D6">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:41:38 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="gender" id="D9FDDDA2-3EE3-3F28-3385-8405DEB7251F">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:41:55 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="birth_date" id="80651190-D515-8CFD-FD73-57B808D375BD">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:42:19 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="address" id="1E8479B2-6CFB-4EB1-3A14-409A08347D8D">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:43:05 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="city" id="6012F48A-6AA9-F6FC-FEE9-FE6791179EA3">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:43:17 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="state" id="F0C425B4-4EE6-567D-9B1D-0DD4E096B231">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:43:27 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="zip" id="25F546BD-FFBE-266F-1D06-BD55725355F2">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:43:40 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="emp_id" id="34D59B80-3255-900C-50AB-F6C16E7182F0">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 00:40:11 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="hire_date" id="312C3C64-3E98-043C-BB41-01F30BA26ED6">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 00:40:31 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="salary" id="F7D91192-729D-F6D6-D097-6BE7744AE15C">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 00:41:09 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="status" id="DE93F892-0F8E-A9D4-C9F1-B2EFA4CB77ED">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 00:41:25 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="title" id="5E7804E6-7CEC-DD1D-7991-89B0D6B1A59B">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 00:41:47 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="rating" id="C66AF040-7262-B8E4-8497-803937591098">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 00:41:55 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="bonus" id="725DFE4C-49F9-AFD4-9DF2-72015FB17B24">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 00:42:12 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="dept_id" id="ABAFAE9C-218C-0C36-A0CC-1CD610A64AD9">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 00:43:40 UTC</createdTime>
+<generatorID>E3D73F83-73A9-DB70-F095-B2A8C7BEFFF1</generatorID>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2E18E309-10B0-DCE0-E213-8CF88AC3D9D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="dept_id1" id="551EA833-89EA-8684-774C-3B222F8B0AA8">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-16 01:51:14 UTC</createdTime>
+<generatorID>838C6F84-D442-981D-BEDD-70C6056B8092</generatorID>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2E18E309-10B0-DCE0-E213-8CF88AC3D9D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="72179D22-10DB-21B8-D999-B4DCE898B67A" name="{entity} PK">
+<createdBy>owner</createdBy>
+<createdTime>2015-02-15 23:41:22 UTC</createdTime>
+<ownerDesignName>hw4 logical</ownerDesignName>
+<engineerTo>
+<item key="C61F987F-2689-36D2-7F43-72E225A7FDF2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B3CB5D7C-A6C7-1324-E0B0-128868F66338</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
